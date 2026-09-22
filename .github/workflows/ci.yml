@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Unit + integration tests (no API key needed)
+        run: pytest
+      - name: Verification harness (secrets, offline end-to-end run)
+        run: python scripts/verify_submission.py --skip-live

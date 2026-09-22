@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python.exe -m pytest:*)",
+      "Bash(.venv/Scripts/python.exe main.py:*)",
+      "Bash(.venv/Scripts/python.exe scripts/verify_submission.py:*)",
+      "Bash(.venv/bin/python -m pytest:*)",
+      "Bash(.venv/bin/python main.py:*)",
+      "Bash(.venv/bin/python scripts/verify_submission.py:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(python main.py:*)",
+      "Bash(python scripts/verify_submission.py:*)",
+      "Read(./output/**)",
+      "Read(./data/**)",
+      "Read(./verification_report.md)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Edit(./.env)",
+      "Bash(cat .env:*)",
+      "Bash(type .env:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

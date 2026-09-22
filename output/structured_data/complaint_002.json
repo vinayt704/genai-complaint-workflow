@@ -1,0 +1,25 @@
+{
+  "doc_id": "complaint_002",
+  "source_file": "complaint_002.docx",
+  "processed_at": "2026-09-22T19:50:53+00:00",
+  "run_id": "600d66213f87",
+  "llm_provider": "openai",
+  "llm_model": "gpt-4o-mini",
+  "prompt_version": "1.1",
+  "extraction": {
+    "customer_name": "Daniel Okafor",
+    "email": "daniel.okafor@example.net",
+    "phone_number": "613-555-0199",
+    "reference_number": "TKT-58213",
+    "product_or_service": "Fibre 500 plan",
+    "complaint_category": "Service Outage / Technical Issue",
+    "issue_description": "The customer reports that their internet service has been completely down since 09 September 2026. They have called support multiple times but have not received a callback from a technician, resulting in lost work days.",
+    "resolution_provided": "Line diagnostics show a fibre break in the neighbourhood distribution node. Case escalated to Tier 2 Network Operations as a priority repair. Service credit request to be reviewed by the retention team once service is restored.",
+    "is_complaint": "Yes",
+    "escalation_required": "Yes",
+    "supporting_document_available": "Yes",
+    "overall_case_status": "In Progress",
+    "priority": "High"
+  },
+  "validation_warnings": []
+}

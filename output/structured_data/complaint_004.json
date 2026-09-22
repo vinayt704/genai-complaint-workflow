@@ -1,0 +1,25 @@
+{
+  "doc_id": "complaint_004",
+  "source_file": "complaint_004.pdf",
+  "processed_at": "2026-09-22T19:50:57+00:00",
+  "run_id": "600d66213f87",
+  "llm_provider": "openai",
+  "llm_model": "gpt-4o-mini",
+  "prompt_version": "1.1",
+  "extraction": {
+    "customer_name": "Robert Chen",
+    "email": "robert.chen@example.com",
+    "phone_number": "604-555-0126",
+    "reference_number": "FRD-2026-0917",
+    "product_or_service": "chequing account",
+    "complaint_category": "Fraud & Security",
+    "issue_description": "The customer reported three unauthorized debit card transactions totaling $1,870.45. The card is still in the customer's possession, and they urgently need the funds returned.",
+    "resolution_provided": "The debit card was blocked immediately, a replacement card was ordered, and the three transactions were disputed. A provisional credit decision is pending the investigation.",
+    "is_complaint": "Yes",
+    "escalation_required": "Yes",
+    "supporting_document_available": "No",
+    "overall_case_status": "Escalated",
+    "priority": "High"
+  },
+  "validation_warnings": []
+}

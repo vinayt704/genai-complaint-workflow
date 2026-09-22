@@ -1,0 +1,12 @@
+Customer message received via website contact form - 17 September 2026
+
+Name: Thomas Leblanc
+Email: t.leblanc@example.com
+
+Message:
+Hi, I just wanted to say a big thank you to Sarah at your Kanata store who helped me set up my new
+phone last week - she was patient and really knowledgeable. General inquiry only: do my Contoso Rewards
+points expire at the end of the year, or do they roll over? My member number is RWD-305511.
+
+Thanks!
+Thomas

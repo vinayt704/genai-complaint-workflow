@@ -1,0 +1,9 @@
+Chat transcript summary - Contoso Mobile - 20 Sept 2026
+
+cust: hi my name is Grace Kim, number on the account is 647-555-0188
+cust: my bill this month has $312.60 in roaming charges but i bought the Travel Pass before my trip to Chicago!!
+cust: this is not right, i want these charges removed
+agent: I'm sorry to hear that. I can see a Travel Pass purchase on 02 Sept on your account.
+agent: I've raised billing dispute BIL-2026-5541 for the roaming charges. The billing team will review it.
+cust: ok but i dont want to pay this while it's being checked
+agent: understood, I have noted that on the dispute.

@@ -1,0 +1,44 @@
+{
+  "run_id": "600d66213f87",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "prompt_version": "1.1",
+  "started_at": "2026-09-22T19:50:45+00:00",
+  "finished_at": "2026-09-22T19:51:02+00:00",
+  "elapsed_seconds": 16.93,
+  "files_total": 11,
+  "status_counts": {
+    "SUCCESS": 8,
+    "PARTIAL": 0,
+    "FAILED": 2,
+    "SKIPPED": 1
+  },
+  "escalations_required": 2,
+  "complaints": 7,
+  "by_category": {
+    "Billing & Payments": 2,
+    "Service Outage / Technical Issue": 1,
+    "Product Quality / Defect": 1,
+    "Fraud & Security": 1,
+    "Customer Service Experience": 1,
+    "Other": 1,
+    "Insurance Claim": 1
+  },
+  "by_case_status": {
+    "In Progress": 3,
+    "Resolved": 1,
+    "Escalated": 1,
+    "Closed": 1,
+    "Open": 1,
+    "Pending Customer Response": 1
+  },
+  "by_priority": {
+    "High": 4,
+    "Low": 3,
+    "Medium": 1
+  },
+  "documents_with_warnings": 0,
+  "llm_calls": 24,
+  "input_tokens": 22552,
+  "output_tokens": 3766
+}

@@ -1,0 +1,35 @@
+digraph G {
+  rankdir=TB; bgcolor="white"; fontname="Helvetica"; nodesep=0.35; ranksep=0.45;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#4a5568", fillcolor="#f7fafc"];
+  edge [color="#4a5568", fontname="Helvetica", fontsize=9];
+
+  data [label="data/\n.pdf  .docx  .txt", shape=folder, fillcolor="#ebf8ff"];
+  cli  [label="main.py (CLI)\nSettings from .env", fillcolor="#edf2f7"];
+  pool [label="Batch orchestrator\nThreadPoolExecutor (MAX_WORKERS docs in parallel)", fillcolor="#edf2f7"];
+
+  subgraph cluster_doc {
+    label="Per-document workflow  (workflow.py)"; style="rounded,dashed"; color="#a0aec0"; fontsize=11;
+    ingest [label="Stage 0  Ingestion\nDocumentLoader: extract + normalise text\n(corrupt / empty / encrypted -> FAILED)", fillcolor="#fffaf0"];
+    extract [label="Stage 1  Structured extraction  [LLM, T=0.0]\nPydantic schema: ComplaintExtraction", fillcolor="#f0fff4"];
+    verify [label="Guardrail: verify_extraction\ncontact/ref must exist in source,\nbusiness consistency checks", fillcolor="#fff5f5"];
+    email [label="Stage 2a  Customer email  [LLM, T=0.3]\nCustomerEmail schema", fillcolor="#f0fff4"];
+    summary [label="Stage 2b  Case summary  [LLM, T=0.3]\nCaseSummary schema", fillcolor="#f0fff4"];
+    ground [label="Guardrail: check_grounding\n(amounts, emails, phones, refs, placeholders)\n-> 1 self-correction pass with feedback", fillcolor="#fff5f5"];
+    persist [label="Stage 3  Persist outputs (atomic writes)", fillcolor="#fffaf0"];
+  }
+
+  llm [label="LLMClient abstraction\nLangChain with_structured_output + tenacity retries\nOpenAI | Azure OpenAI | Gemini | Mock", shape=component, fillcolor="#faf5ff"];
+
+  out [label="output/\nstructured_data/*.json\ncustomer_emails/*.txt\ncase_summaries/*.md", shape=folder, fillcolor="#ebf8ff"];
+  report [label="final_report.csv\nrun_summary.json", shape=note, fillcolor="#ebf8ff"];
+  logs [label="logs/app.log", shape=note, fillcolor="#edf2f7"];
+
+  data -> cli -> pool -> ingest -> extract -> verify;
+  verify -> email [label=" parallel"];
+  verify -> summary [label=" parallel"];
+  email -> ground; summary -> ground;
+  ground -> persist -> out;
+  pool -> report [label=" after all docs", style=dashed];
+  extract -> llm [style=dotted, arrowhead=none]; email -> llm [style=dotted, arrowhead=none]; summary -> llm [style=dotted, arrowhead=none];
+  pool -> logs [style=dotted, arrowhead=none];
+}

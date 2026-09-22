@@ -1,0 +1,14 @@
+Subject: Update on Your Service Outage - Reference TKT-58213
+
+Dear Daniel Okafor,
+
+Thank you for reaching out to us regarding the issues you are experiencing with your Fibre 500 plan. I understand that your internet service has been completely down since 09 September 2026, and that you have faced challenges in getting a timely response from our support team, resulting in lost work days.
+
+I want to assure you that we take this matter seriously. Our line diagnostics have revealed a fibre break in the neighbourhood distribution node. Your case has been escalated to our Tier 2 Network Operations team as a priority repair. While we do not have a confirmed repair date yet, please know that we are actively working to resolve this issue.
+
+Additionally, once your service is restored, your request for a service credit will be reviewed by our retention team.
+
+We appreciate your patience during this time and will keep you updated on the progress of your case.
+
+Kind regards,
+Customer Care Team, Contoso

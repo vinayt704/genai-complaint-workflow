@@ -1,0 +1,22 @@
+From: Meera Joshi <meera.joshi@example.org>
+To: support@contoso-retail.example
+Date: 12 September 2026
+Subject: Washing machine delivered damaged - Order ORD-448120
+
+Hello,
+
+My new front-load washing machine (Contoso AquaPro 8kg) was delivered on 10 September 2026 under order
+ORD-448120. When the delivery team removed the packaging the front door glass was cracked and the
+top panel was dented. The driver noted the damage on the delivery slip. I have attached photos of the
+damage and the signed delivery slip.
+
+I paid in full and would like a replacement, not a repair.
+
+Phone: 416-555-0173
+
+Thanks,
+Meera Joshi
+
+---------- Reply from Contoso Retail Support (13 September 2026) ----------
+Dear Ms. Joshi, we have approved a replacement unit. The replacement delivery is scheduled for
+18 September 2026 and the damaged unit will be collected at the same time. Case status: in progress.

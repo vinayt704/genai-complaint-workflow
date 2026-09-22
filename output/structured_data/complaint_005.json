@@ -1,0 +1,25 @@
+{
+  "doc_id": "complaint_005",
+  "source_file": "complaint_005.docx",
+  "processed_at": "2026-09-22T19:50:58+00:00",
+  "run_id": "600d66213f87",
+  "llm_provider": "openai",
+  "llm_model": "gpt-4o-mini",
+  "prompt_version": "1.1",
+  "extraction": {
+    "customer_name": "Aisha Mohammed",
+    "email": "aisha.m@example.ca",
+    "phone_number": "Not Provided",
+    "reference_number": "Not Provided",
+    "product_or_service": "savings account",
+    "complaint_category": "Customer Service Experience",
+    "issue_description": "The customer visited the branch to update the address on her savings account but was dismissed by the teller who refused to help. The online form was failing, and after waiting 40 minutes, she left without the change being made.",
+    "resolution_provided": "The branch manager called Ms. Mohammed, apologised for the experience and updated her address during the call. The teller has received coaching on customer service standards.",
+    "is_complaint": "Yes",
+    "escalation_required": "No",
+    "supporting_document_available": "No",
+    "overall_case_status": "Closed",
+    "priority": "Low"
+  },
+  "validation_warnings": []
+}
